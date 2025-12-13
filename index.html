@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.23.0/sweetalert2.min.css"
+      integrity="sha512-Ivy7sPrd6LPp20adiK3al16GBelPtqswhJnyXuha3kGtmQ1G2qWpjuipfVDaZUwH26b3RDe8x707asEpvxl7iA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-white shadow-sm">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-center gap-3 align-items-center"
+          ><div class="icon bg-primary rounded-3">
+            <i class="fas fa-address-book text-white p-3 fs-3 icon-small"></i>
+          </div>
+
+          <div class="">
+            <h4 class="my-0 fw-bolder">
+              Contact <span class="text-primary">Hub</span>
+            </h4>
+            <p class="my-0 text-secondary fs-sm d-smm-none">
+              Smart Contact Manager
+            </p>
+          </div>
+        </a>
+        <div class="d-flex justify-content-center align-items-center">
+          <button class="showModel btn btn-primary rounded-4 mx-2 d-smm-none">
+            + Add Contact
+          </button>
+          <button
+            class="showModel btn btn-primary rounded-4 mx-2 d-none d-smm-plock"
+          >
+            + Add
+          </button>
+          <div
+            class="icon2 d-flex justify-content-center align-items-center d-smm-none"
+          >
+            <i class="fas fa-bell"></i>
+          </div>
+          <div
+            class="icon2 d-flex justify-content-center align-items-center d-smm-none"
+          >
+            <i class="fas fa-cog"></i>
+          </div>
+          <div class="icon2">
+            <img
+              class="w-100 rounded-3"
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid py-5 bg-icon">
+      <div class="container">
+        <div class="row capital g-2">
+          <div class="col-md-4">
+            <div
+              class="box d-flex justify-content-start align-items-center gap-3 p-3 bg-white rounded-3 shadow"
+            >
+              <div class="icon bg-primary rounded-3">
+                <i class="fa-solid fa-users fs-5 p-3 text-white"></i>
+              </div>
+              <div class="">
+                <h5 class="my-0 text-secondary">Total</h5>
+                <h3 class="my-0">0</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="box d-flex justify-content-start align-items-center gap-3 p-3 bg-white rounded-3 shadow"
+            >
+              <div class="icon bgff7600 rounded-3">
+                <i class="fa-solid fa-star fs-5 p-3 text-white"></i>
+              </div>
+              <div class="">
+                <h5 class="my-0 text-secondary">FAVOURTE</h5>
+                <h3 class="my-0">0</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="box d-flex justify-content-start align-items-center gap-2 p-3 bg-white rounded-3 shadow"
+            >
+              <div class="icon bgee0029 rounded-3">
+                <i class="fa-solid fa-heart-pulse fs-5 p-3 text-white"></i>
+              </div>
+              <div class="">
+                <h5 class="my-0 text-secondary">Emergency</h5>
+                <h3 class="my-0">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-2 bg-icon">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="cart">
+              <h2>All Contacts</h2>
+              <p>Manage and organize your 0 contacts</p>
+              <div
+                class="form d-flex justify-content-center align-items-center"
+              >
+                <div class="icon bg-white p-1">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input
+                  type="search"
+                  class="form-control border-start-0"
+                  placeholder="Seearch by name , email and phone"
+                />
+              </div>
+              <div
+                class="no-contacts py-5 no-contacts d-flex justify-content-center align-items-center flex-column"
+              >
+                <div class="icon rounded-3 bg-icon">
+                  <i class="fas fa-address-book text-secondary p-3 fs-3"></i>
+                </div>
+                <h3 class="text-secondary">No contacts found</h3>
+                <p class="text-secondary">Click "Add Contact" to get started</p>
+              </div>
+              <div class="row row-contacts my-3 g-3">
+                <div class="col-md-6">
+                  <div class="bg-white shadow-sm rounded-3 p-3">
+                    <div
+                      class="d-flex justify-content-start align-items-center gap-3"
+                    >
+                      <div class="icon2 overflow-hidden">
+                        <img
+                          src="./images/41NO8BRw+WL._AC_SX522_.jpg"
+                          alt=""
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="">
+                        <p class="my-0">aa</p>
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div
+                            class="icon2-sm bg-icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-phone text-primary"></i>
+                          </div>
+                          <p class="my-0">010101010</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start my-2 align-items-center"
+                    >
+                      <div
+                        class="icon2-sm bg-icon d-flex justify-content-center align-items-center"
+                      >
+                        <i class="fa-solid fa-envelope text-warning"></i>
+                      </div>
+                      <p class="my-0">010101010</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start my-2 align-items-center"
+                    >
+                      <div
+                        class="icon2-sm bg-icon d-flex justify-content-center align-items-center"
+                      >
+                        <i class="fa-solid fa-map-marker-alt text-info"></i>
+                      </div>
+                      <p class="my-0">010101010</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <span
+                        class="padge text-white py-1 px-3 rounded-3 bgff7600"
+                        >Frinds</span
+                      >
+                      <span
+                        class="padge text-white py-1 px-3 rounded-3 bgee0029"
+                        >Emergancy</span
+                      >
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center my-3"
+                    >
+                      <div
+                        class="groupq d-flex justify-content-center align-items-center gap-1"
+                      >
+                        <div class="icon-small bgecfdf5 p-2 rounded-3">
+                          <i class="fa-solid fa-phone text-primary"></i>
+                        </div>
+                        <div class="icon-small bgecfdf5 p-2 rounded-3">
+                          <i class="fa-solid fa-envelope text-warning"></i>
+                        </div>
+                      </div>
+                      <div
+                        class="groupq d-flex justify-content-center align-items-center gap-1"
+                      >
+                        <div class="icon-small bgecfdf5 p-2 rounded-3">
+                          <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <div class="icon-small bgecfdf5 p-2 rounded-3">
+                          <i class="fa-solid fa-heartbeat text-danger"></i>
+                        </div>
+                        <div class="icon-small bgecfdf5 p-2 rounded-3">
+                          <i class="fa-solid fa-pen text-secondary"></i>
+                        </div>
+                        <div class="icon-small bgecfdf5 p-2 rounded-3">
+                          <i class="fa-solid fa-trash text-secondary"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="inner rounded-4 border shadow-sm">
+              <div
+                class="cart bgfff8ed d-flex justify-content-start align-items-center gap-2 p-3 border shadow-sm"
+              >
+                <div class="icon rounded-3">
+                  <i
+                    class="fa-solid fa-star bgff7600 rounded-3 fs-6 p-3 text-white"
+                  ></i>
+                </div>
+                <div class="">
+                  <h5 class="text-black my-0">Favorites</h5>
+                  <p class="text-secondary my-0">
+                    Quick access to starred contacts
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-white py-2 shadow-sm d-flex justify-content-center align-items-center"
+              >
+                <p class="text-secondary my-5">No favorites yet</p>
+              </div>
+            </div>
+            <div class="inner rounded-4 my-3">
+              <div
+                class="cart bgfff8ed d-flex justify-content-start align-items-center gap-2 p-3 border shadow-sm"
+              >
+                <div class="icon rounded-3">
+                  <i
+                    class="fa-solid fa-star bgee0029 rounded-3 fs-6 p-3 text-white"
+                  ></i>
+                </div>
+                <div class="">
+                  <h5 class="text-black my-0">Emergency</h5>
+                  <p class="text-secondary my-0">
+                    Important contacts for urgent calls
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-white py-2 shadow-sm d-flex justify-content-center align-items-center"
+              >
+                <p class="text-secondary my-5">No emergency contacts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="model d-none">
+      <div class="card bg-white w-50 rounded-4 mt-3 mb-3 p-3">
+        <div
+          class="card-header bg-white d-flex justify-content-between align-items-center"
+        >
+          <h3>Add New Contact</h3>
+          <div id="close">
+            <i class="fa-solid fa-xmark" id=""></i>
+          </div>
+        </div>
+        <div
+          class="card-body d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="icon-user my-3">
+            <i class="fa-solid fa-user text-white fs-3"></i>
+          </div>
+          <div
+            class="my-4 input-file d-flex justify-content-center align-items-center w-50 mx-auto"
+          >
+            <input type="file" class="custom-file-input" id="photo" />
+            <div
+              class="override-text d-flex justify-content-center gap-1 align-items-center"
+            >
+              <i class="fa-solid fa-camera"></i>
+              <p class="my-0 text-secondary">Change Photo</p>
+            </div>
+          </div>
+          <div class="image-in d-none my-5" id="imageDiv">
+            <img id="image" class="w-100 rounded-4" />
+          </div>
+          <div class="form-group mt-5 w-100">
+            <label for="fullname"
+              >Full Name <span class="text-danger">*</span></label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="fullname"
+              placeholder="Enter Full Name"
+            />
+            <p class="text-danger d-none" id="name_alert">
+              Name should contain only letters and spaces (2-50 characters)
+            </p>
+          </div>
+          <div class="form-group mt-3 w-100">
+            <label for="phone"
+              >Phone Number <span class="text-danger">*</span></label
+            >
+            <input
+              class="form-control"
+              type="tel"
+              id="phone"
+              placeholder="Enter Phone Number "
+            />
+            <p class="text-danger d-none" id="phone_alert">
+              Please enter a valid Egyptian phone number
+            </p>
+          </div>
+          <div class="form-group mt-3 w-100">
+            <label for="email">Email Address </label>
+            <input
+              class="form-control"
+              type="email"
+              id="email"
+              placeholder="Enter Email Address "
+            />
+            <p class="text-danger d-none" id="email_alert">
+              Please enter a valid email address
+            </p>
+          </div>
+          <div class="form-group mt-3 w-100">
+            <label for="address">Address </label>
+            <input
+              class="form-control"
+              type="text"
+              id="address"
+              placeholder="Enter address "
+            />
+          </div>
+          <div class="form-group mt-3 w-100">
+            <label for="group">Group</label>
+            <select name="" class="form-select" id="group">
+              <option value="">Family</option>
+              <option value="">Frindes</option>
+              <option value="">Work</option>
+              <option value="">School</option>
+              <option value="">Others</option>
+            </select>
+          </div>
+          <div class="form-group mt-3 w-100">
+            <label for="notes">Notes </label>
+            <textarea
+              class="form-control"
+              placeholder="Enter Notes "
+              id="notes"
+            ></textarea>
+          </div>
+          <div
+            class="form-group form-check w-100 mt-3 d-flex justify-content-start align-items-center"
+          >
+            <input id="favorite" class="form-check me-1" type="checkbox" />
+            <i class="fa-solid fa-star text-warning"></i>
+
+            <label for="favorite" class="me-4">Favorite </label>
+            <input id="emergency" class="form-check me-1" type="checkbox" />
+            <i class="fa-solid fa-heart-pulse text-info"></i>
+
+            <label for="emergency"> Emergency </label>
+          </div>
+          <div
+            class="form-group w-100 mt-3 d-flex justify-content-center gap-2 align-items-center"
+          >
+            <button class="btn btn-secondary w-50" id="cancel">Cancel</button>
+            <button class="btn btn-primary w-50" id="save">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.23.0/sweetalert2.min.js"
+      integrity="sha512-pnPZhx5S+z5FSVwy62gcyG2Mun8h6R+PG01MidzU+NGF06/ytcm2r6+AaWMBXAnDHsdHWtsxS0dH8FBKA84FlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+      integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

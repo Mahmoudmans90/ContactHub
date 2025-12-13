@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: sticky !important;
+  top: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+.image-in {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.icon2,
+.icon2-sm {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.icon2-sm {
+  width: 30px;
+  height: 30px;
+}
+.icon2:hover {
+  background-color: #00000021;
+}
+.btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.bg-icon {
+  background-color: rgba(141, 141, 255, 0.103);
+}
+.bgff7600 {
+  background-color: #ff7600;
+}
+.bgee0029 {
+  background-color: #ee0029;
+}
+.bgecfdf5 {
+  background-color: #ecfdf5;
+}
+.capital {
+  text-transform: uppercase;
+}
+.form {
+  border-radius: 10px;
+  color: #0000008a;
+  overflow: hidden;
+  border: 1px solid #0000002f;
+}
+.form input {
+  font-weight: bolder;
+  height: 50px;
+  border-radius: 0;
+  border: 0;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+.form:has(.form-control:focus) {
+  border: 1px solid #690dfd;
+}
+
+.form .icon {
+  height: 50px;
+
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+.bgee0029opa {
+  background-color: #ee00281e;
+}
+.bgff7600opa {
+  background-color: #ff770010;
+}
+.inner {
+  overflow: hidden;
+}
+.bgfff8ed {
+  background-color: #fff8ed;
+}
+.bgfef2f2 {
+  background-color: #fef2f2;
+}
+p {
+  font-size: 15px !important;
+}
+@media (max-width: 992px) {
+  .d-smm-none {
+    display: none !important;
+  }
+  .icon-small {
+    font-size: 15px !important;
+    padding: 10px !important;
+  }
+  .d-smm-plock {
+    display: block !important;
+  }
+  .card {
+    width: 90% !important;
+  }
+}
+.stick {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.bg-primary {
+  background-color: #5f34f9 !important;
+}
+.btn-primary {
+  background-color: #5f34f9 !important;
+  transition: all 0.5s ease;
+}
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2px;
+  color: #fff;
+}
+.icon-user {
+  width: 100px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-file-input {
+  position: absolute;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+}
+
+.override-text:hover {
+  background-color: #e2e6ea;
+  border-color: #0d6efd;
+}
+.input-file {
+  position: relative;
+}
+.override-text {
+  position: absolute;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 1;
+}
+.card {
+  height: 90%;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  border-radius: 20px;
+}
+input:not([type="search"]) {
+  height: 60px;
+  margin-top: 2px;
+  background-color: #1f1e1e07 !important;
+  border-radius: 20px !important;
+}
+input:focus {
+  background-color: #fff !important;
+}
+.form-select {
+  height: 60px;
+}
+.form-check input {
+  width: 20px;
+  height: 20px;
+  background-color: #1f1e1e07 !important;
+  border-radius: 20px !important;
+}
+textarea {
+  background-color: #1f1e1e07 !important;
+  border-radius: 20px !important;
+  height: 70px;
+}
+textarea:focus {
+  background-color: #fff !important;
+}
+#close {
+  cursor: pointer;
+}
