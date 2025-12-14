@@ -27,7 +27,7 @@ let emailReg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 let egyptPhoneReg = /^(?:\+20|0)?1[0125][0-9]{8}$/;
 closebtns = [cancel, closebtn];
 let contacts = [];
-if (localStorage.getItem("contacts").length > 0) {
+if (localStorage.getItem("contacts")) {
   contacts = JSON.parse(localStorage.getItem("contacts"));
   no_contacts.classList.add("d-none");
   displayContacts(contacts);
