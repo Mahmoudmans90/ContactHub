@@ -141,7 +141,7 @@ save.addEventListener("click", function () {
 });
 
 function validate(contact, indexOF = true) {
-  contacts = JSON.parse(localStorage.getItem("contacts"));
+  contacts = JSON.parse(localStorage.getItem("contacts")) ?? [];
 
   if (contact.fullname == "") {
     Swal.fire({
