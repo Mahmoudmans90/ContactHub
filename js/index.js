@@ -422,8 +422,14 @@ function displayContacts(contacts) {
                   </div>
                 </div>`;
   });
-  favDivDisplay.innerHTML = favcart ? favcart : favDivDisplay.innerHTML;
-  displayIm.innerHTML = Emcart ? Emcart : displayIm.innerHTML;
+  favDivDisplay.innerHTML = favcart
+    ? favcart
+    : `<p class="text-secondary my-5">No favorites yet</p>`;
+  displayIm.innerHTML = Emcart
+    ? Emcart
+    : ` <p class="text-secondary my-5">
+                    Important contacts for urgent calls
+                  </p>`;
   row_contacts.innerHTML = cartone;
   no_contacts.classList.toggle("d-none", cartone !== "");
 }
