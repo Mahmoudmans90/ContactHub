@@ -73,40 +73,40 @@
         <div class="row capital g-2">
           <div class="col-md-4">
             <div
-              class="box d-flex justify-content-start align-items-center gap-3 p-3 bg-white rounded-3 shadow"
+              class="box d-flex justify-content-start rounded-3 shadow-hav align-items-center gap-3 p-3 bg-white rounded-3 shadow"
             >
               <div class="icon bg-primary rounded-3">
                 <i class="fa-solid fa-users fs-5 p-3 text-white"></i>
               </div>
               <div class="">
                 <h5 class="my-0 text-secondary">Total</h5>
-                <h3 class="my-0">0</h3>
+                <h3 class="my-0" id="total">0</h3>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div
-              class="box d-flex justify-content-start align-items-center gap-3 p-3 bg-white rounded-3 shadow"
+              class="box d-flex shadow-hav justify-content-start align-items-center gap-3 p-3 bg-white rounded-3 shadow"
             >
               <div class="icon bgff7600 rounded-3">
                 <i class="fa-solid fa-star fs-5 p-3 text-white"></i>
               </div>
               <div class="">
                 <h5 class="my-0 text-secondary">FAVOURTE</h5>
-                <h3 class="my-0">0</h3>
+                <h3 class="my-0" id="favoritee">0</h3>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div
-              class="box d-flex justify-content-start align-items-center gap-2 p-3 bg-white rounded-3 shadow"
+              class="box d-flex shadow-hav justify-content-start align-items-center gap-2 p-3 bg-white rounded-3 shadow"
             >
               <div class="icon bgee0029 rounded-3">
                 <i class="fa-solid fa-heart-pulse fs-5 p-3 text-white"></i>
               </div>
               <div class="">
                 <h5 class="my-0 text-secondary">Emergency</h5>
-                <h3 class="my-0">0</h3>
+                <h3 class="my-0" id="em">0</h3>
               </div>
             </div>
           </div>
@@ -127,13 +127,14 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <input
+                  id="search"
                   type="search"
                   class="form-control border-start-0"
                   placeholder="Seearch by name , email and phone"
                 />
               </div>
               <div
-                class="no-contacts py-5 no-contacts d-flex justify-content-center align-items-center flex-column"
+                class="py-5 no-contacts d-flex justify-content-center align-items-center flex-column"
               >
                 <div class="icon rounded-3 bg-icon">
                   <i class="fas fa-address-book text-secondary p-3 fs-3"></i>
@@ -141,102 +142,11 @@
                 <h3 class="text-secondary">No contacts found</h3>
                 <p class="text-secondary">Click "Add Contact" to get started</p>
               </div>
-              <div class="row row-contacts my-3 g-3">
-                <div class="col-md-6">
-                  <div class="bg-white shadow-sm rounded-3 p-3">
-                    <div
-                      class="d-flex justify-content-start align-items-center gap-3"
-                    >
-                      <div class="icon2 overflow-hidden">
-                        <img
-                          src="./images/41NO8BRw+WL._AC_SX522_.jpg"
-                          alt=""
-                          class="w-100"
-                        />
-                      </div>
-                      <div class="">
-                        <p class="my-0">aa</p>
-                        <div
-                          class="d-flex justify-content-center align-items-center"
-                        >
-                          <div
-                            class="icon2-sm bg-icon d-flex justify-content-center align-items-center"
-                          >
-                            <i class="fa-solid fa-phone text-primary"></i>
-                          </div>
-                          <p class="my-0">010101010</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="d-flex justify-content-start my-2 align-items-center"
-                    >
-                      <div
-                        class="icon2-sm bg-icon d-flex justify-content-center align-items-center"
-                      >
-                        <i class="fa-solid fa-envelope text-warning"></i>
-                      </div>
-                      <p class="my-0">010101010</p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-start my-2 align-items-center"
-                    >
-                      <div
-                        class="icon2-sm bg-icon d-flex justify-content-center align-items-center"
-                      >
-                        <i class="fa-solid fa-map-marker-alt text-info"></i>
-                      </div>
-                      <p class="my-0">010101010</p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-start align-items-center gap-2"
-                    >
-                      <span
-                        class="padge text-white py-1 px-3 rounded-3 bgff7600"
-                        >Frinds</span
-                      >
-                      <span
-                        class="padge text-white py-1 px-3 rounded-3 bgee0029"
-                        >Emergancy</span
-                      >
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center my-3"
-                    >
-                      <div
-                        class="groupq d-flex justify-content-center align-items-center gap-1"
-                      >
-                        <div class="icon-small bgecfdf5 p-2 rounded-3">
-                          <i class="fa-solid fa-phone text-primary"></i>
-                        </div>
-                        <div class="icon-small bgecfdf5 p-2 rounded-3">
-                          <i class="fa-solid fa-envelope text-warning"></i>
-                        </div>
-                      </div>
-                      <div
-                        class="groupq d-flex justify-content-center align-items-center gap-1"
-                      >
-                        <div class="icon-small bgecfdf5 p-2 rounded-3">
-                          <i class="fa-solid fa-star text-warning"></i>
-                        </div>
-                        <div class="icon-small bgecfdf5 p-2 rounded-3">
-                          <i class="fa-solid fa-heartbeat text-danger"></i>
-                        </div>
-                        <div class="icon-small bgecfdf5 p-2 rounded-3">
-                          <i class="fa-solid fa-pen text-secondary"></i>
-                        </div>
-                        <div class="icon-small bgecfdf5 p-2 rounded-3">
-                          <i class="fa-solid fa-trash text-secondary"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="row row-contacts my-3 g-3"></div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="inner rounded-4 border shadow-sm">
+            <div class="inner rounded-4 border shadow-sm shadow-hav">
               <div
                 class="cart bgfff8ed d-flex justify-content-start align-items-center gap-2 p-3 border shadow-sm"
               >
@@ -253,12 +163,13 @@
                 </div>
               </div>
               <div
-                class="bg-white py-2 shadow-sm d-flex justify-content-center align-items-center"
+                id="favDivDisplay"
+                class="bg-white py-2 shadow-sm d-flex justify-content-center align-items-center flex-column"
               >
                 <p class="text-secondary my-5">No favorites yet</p>
               </div>
             </div>
-            <div class="inner rounded-4 my-3">
+            <div class="inner rounded-4 my-3 shadow-hav">
               <div
                 class="cart bgfff8ed d-flex justify-content-start align-items-center gap-2 p-3 border shadow-sm"
               >
@@ -275,7 +186,8 @@
                 </div>
               </div>
               <div
-                class="bg-white py-2 shadow-sm d-flex justify-content-center align-items-center"
+                id="displayIm"
+                class="bg-white py-2 shadow-sm d-flex justify-content-center align-items-center flex-column"
               >
                 <p class="text-secondary my-5">No emergency contacts</p>
               </div>
@@ -366,11 +278,12 @@
           <div class="form-group mt-3 w-100">
             <label for="group">Group</label>
             <select name="" class="form-select" id="group">
-              <option value="">Family</option>
-              <option value="">Frindes</option>
-              <option value="">Work</option>
-              <option value="">School</option>
-              <option value="">Others</option>
+              <option value="">Select group</option>
+              <option value="Family">Family</option>
+              <option value="Frindes">Frindes</option>
+              <option value="Work">Work</option>
+              <option value="School">School</option>
+              <option value="Others">Others</option>
             </select>
           </div>
           <div class="form-group mt-3 w-100">

@@ -6,6 +6,7 @@
 .navbar {
   position: sticky !important;
   top: 0;
+  z-index: 10;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -45,11 +46,20 @@ h6 {
 .icon2:hover {
   background-color: #00000021;
 }
+.shadow-hav {
+  transition: all 0.3s ease;
+}
+.shadow-hav:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4) !important;
+  background-color: #ee002807 !important;
+  transform: translatey(-1px);
+}
 .btn-primary:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -148,6 +158,7 @@ p {
 }
 .model {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   height: 100% !important;
